@@ -1,0 +1,14 @@
+C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.SERVICE\bin\Debug\netcoreapp3.1\Chat.SERVICE.deps.json
+C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.SERVICE\bin\Debug\netcoreapp3.1\Chat.SERVICE.dll
+C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.SERVICE\bin\Debug\netcoreapp3.1\Chat.SERVICE.pdb
+C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.SERVICE\bin\Debug\netcoreapp3.1\Chat.CORE.dll
+C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.SERVICE\bin\Debug\netcoreapp3.1\Chat.DATA.dll
+C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.SERVICE\bin\Debug\netcoreapp3.1\Chat.CORE.pdb
+C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.SERVICE\bin\Debug\netcoreapp3.1\Chat.DATA.pdb
+C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.SERVICE\obj\Debug\netcoreapp3.1\Chat.SERVICE.csprojAssemblyReference.cache
+C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.SERVICE\obj\Debug\netcoreapp3.1\Chat.SERVICE.AssemblyInfoInputs.cache
+C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.SERVICE\obj\Debug\netcoreapp3.1\Chat.SERVICE.AssemblyInfo.cs
+C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.SERVICE\obj\Debug\netcoreapp3.1\Chat.SERVICE.csproj.CoreCompileInputs.cache
+C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.SERVICE\obj\Debug\netcoreapp3.1\Chat.SERVICE.csproj.CopyComplete
+C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.SERVICE\obj\Debug\netcoreapp3.1\Chat.SERVICE.dll
+C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.SERVICE\obj\Debug\netcoreapp3.1\Chat.SERVICE.pdb
