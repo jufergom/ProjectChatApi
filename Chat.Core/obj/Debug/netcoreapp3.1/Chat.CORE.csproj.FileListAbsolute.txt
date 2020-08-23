@@ -1,9 +1,0 @@
-C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.Core\bin\Debug\netcoreapp3.1\Chat.CORE.deps.json
-C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.Core\bin\Debug\netcoreapp3.1\Chat.CORE.dll
-C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.Core\bin\Debug\netcoreapp3.1\Chat.CORE.pdb
-C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.Core\obj\Debug\netcoreapp3.1\Chat.CORE.csprojAssemblyReference.cache
-C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.Core\obj\Debug\netcoreapp3.1\Chat.CORE.AssemblyInfoInputs.cache
-C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.Core\obj\Debug\netcoreapp3.1\Chat.CORE.AssemblyInfo.cs
-C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.Core\obj\Debug\netcoreapp3.1\Chat.CORE.csproj.CoreCompileInputs.cache
-C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.Core\obj\Debug\netcoreapp3.1\Chat.CORE.dll
-C:\Users\mario\Documents\ProjectAPI\ChatAPI\Chat.Core\obj\Debug\netcoreapp3.1\Chat.CORE.pdb
