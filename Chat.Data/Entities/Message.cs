@@ -12,7 +12,14 @@ namespace Chat.DATA.Entities
         public long id { get; set; }    
         [Required]
         public string message { get; set; }
-        public Channel channel { get; set; }
+
+        [ForeignKey(nameof(User))]
+        public string userTag { get; set; }
+
+        [ForeignKey(nameof(Channel))]
+        public long channelId { get; set; }
+
+        public Channel Channel { get; set; }
         public virtual User User { get; set; }
     }
 }

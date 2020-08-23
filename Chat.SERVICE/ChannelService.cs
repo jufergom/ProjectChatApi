@@ -25,13 +25,13 @@ namespace Chat.SERVICE
         {
             var newChannel = new Channel
             {
-                id = channel.id,
                 name = channel.name,
                 topic = channel.topic
             };
 
             _channelRepository.Add(newChannel);
             _channelRepository.saveChanges();
+            channel.id = newChannel.id;
             return ServiceResult<ChannelTransferObject>.SuccessResult(channel);
         }
 

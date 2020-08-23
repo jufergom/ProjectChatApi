@@ -16,6 +16,5 @@ namespace Chat.DATA.Entities
 
         public string password { get; set; }
 
-        public IEnumerable<Message> messages { get; set; }
     }
 }

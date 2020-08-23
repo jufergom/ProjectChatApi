@@ -40,21 +40,21 @@ namespace Chat.DATA.Migrations
                     id = table.Column<long>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     message = table.Column<string>(nullable: false),
-                    channelid = table.Column<long>(nullable: true),
-                    username = table.Column<string>(nullable: true)
+                    userTag = table.Column<string>(nullable: true),
+                    channelId = table.Column<long>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Message", x => x.id);
                     table.ForeignKey(
-                        name: "FK_Message_Channel_channelid",
-                        column: x => x.channelid,
+                        name: "FK_Message_Channel_channelId",
+                        column: x => x.channelId,
                         principalTable: "Channel",
                         principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Message_User_username",
-                        column: x => x.username,
+                        name: "FK_Message_User_userTag",
+                        column: x => x.userTag,
                         principalTable: "User",
                         principalColumn: "username",
                         onDelete: ReferentialAction.Restrict);
@@ -85,14 +85,14 @@ namespace Chat.DATA.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Message_channelid",
+                name: "IX_Message_channelId",
                 table: "Message",
-                column: "channelid");
+                column: "channelId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Message_username",
+                name: "IX_Message_userTag",
                 table: "Message",
-                column: "username");
+                column: "userTag");
 
             migrationBuilder.CreateIndex(
                 name: "IX_userChannel_userTag",

@@ -15,6 +15,5 @@ namespace Chat.DATA.Entities
 
         public string topic { get; set; }
         
-        public IEnumerable<Message> messages { get; set; }
     }
 }
