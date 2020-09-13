@@ -32,31 +32,6 @@ namespace Chat.DATA.Migrations
                     b.ToTable("Channel");
                 });
 
-            modelBuilder.Entity("Chat.DATA.Entities.Message", b =>
-                {
-                    b.Property<long>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<long>("channelId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("message")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("userTag")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("id");
-
-                    b.HasIndex("channelId");
-
-                    b.HasIndex("userTag");
-
-                    b.ToTable("Message");
-                });
-
             modelBuilder.Entity("Chat.DATA.Entities.User", b =>
                 {
                     b.Property<string>("username")
@@ -86,19 +61,6 @@ namespace Chat.DATA.Migrations
                     b.HasIndex("userTag");
 
                     b.ToTable("userChannel");
-                });
-
-            modelBuilder.Entity("Chat.DATA.Entities.Message", b =>
-                {
-                    b.HasOne("Chat.DATA.Entities.Channel", "Channel")
-                        .WithMany()
-                        .HasForeignKey("channelId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Chat.DATA.Entities.User", "User")
-                        .WithMany()
-                        .HasForeignKey("userTag");
                 });
 
             modelBuilder.Entity("Chat.DATA.Entities.UserChannel", b =>

@@ -37,7 +37,7 @@ namespace Chat.API.Controllers
             return BadRequest(userResult.Error);
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("/api/[controller]/credentials")]
         public IActionResult checkUser([FromBody] UserTransferObject user)
         {

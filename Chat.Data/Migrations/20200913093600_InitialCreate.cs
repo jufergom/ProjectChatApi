@@ -34,33 +34,6 @@ namespace Chat.DATA.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Message",
-                columns: table => new
-                {
-                    id = table.Column<long>(nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    message = table.Column<string>(nullable: false),
-                    userTag = table.Column<string>(nullable: true),
-                    channelId = table.Column<long>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Message", x => x.id);
-                    table.ForeignKey(
-                        name: "FK_Message_Channel_channelId",
-                        column: x => x.channelId,
-                        principalTable: "Channel",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Message_User_userTag",
-                        column: x => x.userTag,
-                        principalTable: "User",
-                        principalColumn: "username",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "userChannel",
                 columns: table => new
                 {
@@ -85,16 +58,6 @@ namespace Chat.DATA.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Message_channelId",
-                table: "Message",
-                column: "channelId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Message_userTag",
-                table: "Message",
-                column: "userTag");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_userChannel_userTag",
                 table: "userChannel",
                 column: "userTag");
@@ -102,9 +65,6 @@ namespace Chat.DATA.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Message");
-
             migrationBuilder.DropTable(
                 name: "userChannel");
 

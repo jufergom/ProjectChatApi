@@ -22,6 +22,7 @@ namespace Chat.API.Controllers
         }
 
         [HttpGet]
+        [Route("/api/[controller]/all")]
         public IActionResult getAllChannels()
         {
             var result = _channelService.getAllChannels();
@@ -40,8 +41,7 @@ namespace Chat.API.Controllers
         }
 
         [HttpGet]
-        [Route("{user}")]
-        public IActionResult getChannelsByUser(string user)
+        public IActionResult getChannelsByUser([FromQuery] string user)
         {
             var result = _channelService.getChannelsByUser(user);
             if (result.ResponseCode == ResponseCode.Success)
@@ -54,6 +54,16 @@ namespace Chat.API.Controllers
         public IActionResult assignChannelToUser(long id, string username)
         {
             var result = _channelService.assignChannelToUser(id,username);
+            if (result.ResponseCode == ResponseCode.Success)
+                return Ok(result.Result);
+            return BadRequest(false);
+        }
+
+        [HttpGet]
+        [Route("/api/[controller]/{id}")]
+        public IActionResult getUsersInChannel(long id)
+        {
+            var result = _channelService.getUserbyChannel(id);
             if (result.ResponseCode == ResponseCode.Success)
                 return Ok(result.Result);
             return BadRequest(result.Error);

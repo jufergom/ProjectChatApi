@@ -36,13 +36,13 @@ namespace Chat.API
             //Repositories
             services.AddScoped<IRepository<User>, UserRepository>();
             services.AddScoped<IRepository<Channel>, ChannelRepository>();
-            services.AddScoped<IRepository<Message>, MessageRepository>();
+         
             services.AddScoped<IRepository<UserChannel>, UserChannelRepository>();
 
             //services
             services.AddScoped<IChannelService, ChannelService>();
             services.AddScoped<IUserService, UserService>();
-            services.AddScoped<IMessageService, MessageService>();
+          
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

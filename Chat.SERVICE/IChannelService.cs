@@ -12,6 +12,8 @@ namespace Chat.SERVICE
         public ServiceResult<IEnumerable<ChannelTransferObject>> getChannelsByUser(string username);
         public ServiceResult<ChannelTransferObject> addChannel(ChannelTransferObject channel);
 
+        public ServiceResult<IEnumerable<UserTransferObject>> getUserbyChannel(long id);
+
         public ServiceResult<bool> assignChannelToUser(long idChannel, string username);
     }
 }

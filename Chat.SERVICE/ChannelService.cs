@@ -75,5 +75,20 @@ namespace Chat.SERVICE
 
             return ServiceResult<IEnumerable<ChannelTransferObject>>.SuccessResult(channels);
         }
+
+        public ServiceResult<IEnumerable<UserTransferObject>> getUserbyChannel(long id)
+        {
+            var channels = _userChannelRepository.All()
+                .Include(x => x.User)
+                .Where(x => x.idChannel == id)
+                .Select(x => new UserTransferObject
+                {
+                    username = x.User.name,
+                    password = null,
+                    name = x.User.name
+                }).ToList();
+
+            return ServiceResult<IEnumerable<UserTransferObject>>.SuccessResult(channels);
+        }
     }
 }

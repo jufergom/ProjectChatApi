@@ -8,7 +8,6 @@ namespace Chat.Data
     {
         public DbSet<User> User { get; set; }
         public DbSet<Channel> Channel { get; set; }
-        public DbSet<Message> Message { get; set; }
 
         public DbSet<UserChannel> userChannel { get; set; }
 
