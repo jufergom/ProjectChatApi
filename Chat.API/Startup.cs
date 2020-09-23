@@ -31,6 +31,7 @@ namespace Chat.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddCors();
             services.AddDbContext<ChatContext>();
 
             //Repositories
@@ -56,6 +57,8 @@ namespace Chat.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(options => options.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 
             app.UseAuthorization().UseCors();
 
