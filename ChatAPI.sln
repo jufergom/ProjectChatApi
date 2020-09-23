@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chat.API", "Chat.API\Chat.API.csproj", "{F0A8A2AC-DC49-4EC8-AB8B-4D5B53BCBA51}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chat.API", "Chat.API\Chat.API.csproj", "{F0A8A2AC-DC49-4EC8-AB8B-4D5B53BCBA51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chat.DATA", "Chat.Data\Chat.DATA.csproj", "{B9A181EB-2E56-4679-A0CD-21767DB27893}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chat.DATA", "Chat.Data\Chat.DATA.csproj", "{B9A181EB-2E56-4679-A0CD-21767DB27893}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chat.CORE", "Chat.Core\Chat.CORE.csproj", "{68C4881C-D407-43B3-AAB3-C50BC624C111}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chat.CORE", "Chat.Core\Chat.CORE.csproj", "{68C4881C-D407-43B3-AAB3-C50BC624C111}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chat.SERVICE", "Chat.SERVICE\Chat.SERVICE.csproj", "{6FEC3E33-509F-440F-9C37-E5217F96D5A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chat.SERVICE", "Chat.SERVICE\Chat.SERVICE.csproj", "{6FEC3E33-509F-440F-9C37-E5217F96D5A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatAPI.TEST", "ChatAPI.TEST\ChatAPI.TEST.csproj", "{821815E7-4911-4E0F-8E11-8F40179C4526}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{6FEC3E33-509F-440F-9C37-E5217F96D5A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FEC3E33-509F-440F-9C37-E5217F96D5A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FEC3E33-509F-440F-9C37-E5217F96D5A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{821815E7-4911-4E0F-8E11-8F40179C4526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{821815E7-4911-4E0F-8E11-8F40179C4526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{821815E7-4911-4E0F-8E11-8F40179C4526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{821815E7-4911-4E0F-8E11-8F40179C4526}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
